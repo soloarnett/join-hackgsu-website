@@ -18,12 +18,12 @@ function getSectionTopPosition(section){
 function getSectionNextPosition(section1, section2){
 	// console.log(getSectionTopPosition(section2) - (getSectionTitleSize(section1) + (22 * (parseInt((getSectionTitleSize(section1) - 20)/parseInt($('.container.' + section1 + ' .title').css('font-size') + 5)))  ) ));
 	if (getSectionTitleSize(section2) > getSectionTitleSize(section1)) {
-		console.log(false);
+		// console.log(false);
 		return getSectionTopPosition(section2) - (getSectionTitleSize(section1) + (22 * (parseInt((getSectionTitleSize(section1) - 20)/parseInt($('.container.' + section1 + ' .title').css('font-size') + 5)) - (1 * 
 			parseInt(parseInt((getSectionTitleSize(section1) - 20)/parseInt($('.container.' + section1 + ' .title').css('font-size') + 5)) / 2)
 			) )  ) );
 	}else{
-		console.log(true);
+		// console.log(true);
 		return getSectionTopPosition(section2) - (getSectionTitleSize(section1) + 22); //* (parseInt((getSectionTitleSize(section2) - 20)/parseInt($('.container.' + section2 + ' .title').css('font-size') + 5)))  ) );
 	}
 	
